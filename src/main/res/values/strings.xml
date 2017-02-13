@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bunk Poll</string>
+    <string name="register_page_header">Just Few More Steps..!!</string>
+    <string name="register_name">Enter your name</string>
+    <string name="register_email">Enter your email</string>
+    <string name="register_password">Enter your password</string>
+    <string name="register_college_name">Enter your college name</string>
+    <string name="register_sem">Enter your current semester</string>
+    <string name="register_section">Enter your section</string>
+    <string name="register_phone">Enter your phone number</string>
+    <string name="register_button">REGISTER</string>
+</resources>
