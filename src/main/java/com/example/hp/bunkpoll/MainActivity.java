@@ -8,11 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
 
+    TextView registerTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -23,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
         if(networkInfo!=null && networkInfo.isConnected())
         {
             setContentView(R.layout.activity_main);
-            Button buttonRegister=(Button)findViewById(R.id.button_register);
-            buttonRegister.setOnClickListener(new View.OnClickListener() {
+
+            registerTextView=(TextView) findViewById(R.id.register_text_view);
+            registerTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(MainActivity.this,RegisterActivity.class);

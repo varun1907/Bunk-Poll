@@ -1,12 +1,38 @@
 <resources>
+
+
     <string name="app_name">Bunk Poll</string>
+    <string name="main_page_header">BUNK POLL</string>
+    <string name="main_email">Email</string>
+    <string name="main_email_text">Enter your email</string>
+    <string name="main_pass">Password</string>
+    <string name="main_pass_text">Enter your password</string>
+    <string name="main_btn_login">LOG IN</string>
+    <string name="main_regis_link">No account yet? Create one</string>
+
+
+
+
     <string name="register_page_header">Just Few More Steps..!!</string>
-    <string name="register_name">Enter your name</string>
-    <string name="register_email">Enter your email</string>
-    <string name="register_password">Enter your password</string>
-    <string name="register_college_name">Enter your college name</string>
-    <string name="register_sem">Enter your current semester</string>
-    <string name="register_section">Enter your section</string>
-    <string name="register_phone">Enter your phone number</string>
-    <string name="register_button">REGISTER</string>
+    <string name="regis_name">Name</string>
+    <string name="regis_name_text">Enter your name</string>
+    <string name="regis_email">Email</string>
+    <string name="regis_email_text">Enter your email</string>
+    <string name="regis_pass">Password</string>
+    <string name="regis_pass_text">Enter your password</string>
+    <string name="regis_btn_proceed">PROCEED</string>
+
+
+
+    <string name="proceed_college">College</string>
+    <string name="proceed_college_text">Enter your college name</string>
+    <string name="proceed_branch">Branch</string>
+    <string name="proceed_branch_text">Enter your branch</string>
+    <string name="proceed_sem">Semester</string>
+    <string name="proceed_sem_text">Enter your current semester</string>
+    <string name="proceed_section">Section</string>
+    <string name="proceed_section_text">Enter your section</string>
+    <string name="proceed_phone">Phone</string>
+    <string name="proceed_phone_text">Enter your phone number</string>
+    <string name="proceed_btn_register">REGISTER</string>
 </resources>
