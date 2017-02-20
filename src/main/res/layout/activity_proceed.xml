@@ -24,7 +24,7 @@
             android:layout_marginTop="30dp"
             android:paddingLeft="15dp"
             android:text="@string/proceed_college"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/textColor"
             android:textSize="22sp" />
 
 
@@ -39,7 +39,7 @@
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@color/textColor" />
 
         <TextView
             android:id="@+id/regis_view_branch"
@@ -48,7 +48,7 @@
             android:layout_marginTop="30dp"
             android:paddingLeft="15dp"
             android:text="@string/proceed_branch"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/textColor"
             android:textSize="22sp" />
 
 
@@ -63,7 +63,7 @@
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@color/textColor" />
 
         <TextView
             android:id="@+id/regis_view_sem"
@@ -72,7 +72,7 @@
             android:layout_marginTop="30dp"
             android:paddingLeft="15dp"
             android:text="@string/proceed_sem"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/textColor"
             android:textSize="22sp" />
 
 
@@ -87,7 +87,7 @@
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@color/textColor" />
 
 
         <TextView
@@ -97,7 +97,7 @@
             android:layout_marginTop="30dp"
             android:paddingLeft="15dp"
             android:text="@string/proceed_section"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/textColor"
             android:textSize="22sp" />
 
 
@@ -112,7 +112,7 @@
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@color/textColor" />
 
         <TextView
             android:id="@+id/regis_view_phone"
@@ -121,7 +121,7 @@
             android:layout_marginTop="30dp"
             android:paddingLeft="15dp"
             android:text="@string/proceed_phone"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/textColor"
             android:textSize="22sp" />
 
 
@@ -136,7 +136,7 @@
             android:inputType="phone"
             android:paddingLeft="10dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@color/textColor" />
 
         <Button
             android:id="@+id/button_register"
@@ -146,7 +146,8 @@
             android:onClick="saveInfo"
             android:paddingBottom="7dp"
             android:text="@string/proceed_btn_register"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/textColor"
+            android:layout_marginTop="25dp"/>
 
 
     </LinearLayout>

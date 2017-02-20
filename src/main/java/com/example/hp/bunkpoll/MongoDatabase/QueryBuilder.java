@@ -53,6 +53,14 @@ public class QueryBuilder {
         return "docs101";
     }
 
+
+    public String buildInfoGetURL()
+    {
+        return getBaseUrl()+documentRequest()+docApiKeyUrl();
+    }
+
+
+
     /**
      * Builds a complete URL using the methods specified above
      * @return

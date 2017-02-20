@@ -104,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
         proceedButton.setEnabled(true);
     }
     public void onProceedFailed() {
-        Toast.makeText(getBaseContext(), "Unable to proceed", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Unable to proceed", Toast.LENGTH_LONG).show();
 
         proceedButton.setEnabled(true);
     }

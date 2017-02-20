@@ -100,8 +100,7 @@ public class Proceed extends AppCompatActivity {
 
         SaveAsyncTask tsk = new SaveAsyncTask();
         tsk.execute(registerInfo);
-        Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_LONG).show();
-
+        
         new android.os.Handler().postDelayed(
                 new Runnable() {
                     public void run() {
@@ -112,6 +111,7 @@ public class Proceed extends AppCompatActivity {
                         progressDialog.dismiss();
                     }
                 }, 3000);
+        Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_LONG).show();
 
     }
 
