@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="23dp"
+        android:text="@string/main_page_header"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/main_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="15dp"
+        android:text="@string/main_email"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/main_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/main_email_text"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/main_pass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="15dp"
+        android:text="@string/main_pass"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/main_text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/main_pass_text"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="#263238"
+        android:text="@string/main_btn_login"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/register_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="90dp"
+        android:text="@string/main_regis_link"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

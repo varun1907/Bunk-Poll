@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.hp.bunkpoll.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="39dp"
+        android:paddingTop="25dp"
+        android:text="@string/register_page_header"
+        android:textAppearance="?actionBarPopupTheme"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/regis_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="15dp"
+        android:text="@string/regis_name"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/regis_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/regis_name_text"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/regis_view_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:text="@string/regis_email"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/regis_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/regis_email_text"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="13dp"
+        android:textColorHint="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/regis_view_pass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:text="@string/regis_pass"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/regis_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/regis_pass_text"
+        android:inputType="textPassword"
+        android:paddingLeft="13dp"
+        android:textColorHint="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:background="#263238"
+        android:onClick="saveInfo"
+        android:paddingBottom="7dp"
+        android:text="@string/regis_btn_proceed"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
