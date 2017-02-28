@@ -17,6 +17,7 @@ public class QueryBuilder {
         return "code101";
     }
 
+
     /**
      * Specify your MongoLab API here
      * @return
@@ -34,6 +35,7 @@ public class QueryBuilder {
     {
         return "https://api.mongolab.com/api/1/databases/"+getDatabaseName()+"/collections/";
     }
+
 
     /**
      * Completes the formating of your URL and adds your API key at the end

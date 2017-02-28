@@ -13,8 +13,8 @@ public class LoginQuery {
 
 
 
-    private static String  queryEmail;
-  private static String queryPass;
+    public  String  queryEmail;
+  public  String queryPass;
 
 
 

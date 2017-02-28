@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".Proceed"></activity>
+        <activity android:name=".ProceedActivity" />
+        <activity
+            android:name=".IntermediateActivity"
+            android:label="@string/title_activity_intermediate"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

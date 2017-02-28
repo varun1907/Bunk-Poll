@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    tools:context="com.example.hp.bunkpoll.PlanBunkButtonFragment">
+
+    <Button
+        android:id="@+id/plan_bunk"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="PLAN BUNK"
+        android:background="#263238"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="190dp"/>
+</LinearLayout>

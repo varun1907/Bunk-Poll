@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             boolean authenticate=task.execute(email,pass).get();
             if(authenticate)
             {
-                Intent testIntent=new Intent(MainActivity.this,RegisterActivity.class);
+                Intent testIntent=new Intent(MainActivity.this,IntermediateActivity.class);
                 startActivity(testIntent);
             }
             else

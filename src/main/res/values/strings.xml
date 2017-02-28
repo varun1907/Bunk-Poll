@@ -11,8 +11,6 @@
     <string name="main_regis_link">No account yet? Create one</string>
 
 
-
-
     <string name="register_page_header">Just Few More Steps..!!</string>
     <string name="regis_name">Name</string>
     <string name="regis_name_text">Enter your name</string>
@@ -21,7 +19,6 @@
     <string name="regis_pass">Password</string>
     <string name="regis_pass_text">Enter your password</string>
     <string name="regis_btn_proceed">PROCEED</string>
-
 
 
     <string name="proceed_college">College</string>
@@ -35,4 +32,10 @@
     <string name="proceed_phone">Phone</string>
     <string name="proceed_phone_text">Enter your phone number</string>
     <string name="proceed_btn_register">REGISTER</string>
+    <string name="title_activity_intermediate">IntermediateActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_history">History</string>
+    <string name="category_plan_bunk">Plan Bunk</string>
 </resources>
