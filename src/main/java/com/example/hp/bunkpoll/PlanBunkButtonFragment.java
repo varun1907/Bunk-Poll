@@ -23,14 +23,15 @@ public class PlanBunkButtonFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        Button planBunk=(Button)getView().findViewById(R.id.plan_bunk);
 
-       planBunk.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
+     //   Button planBunk=(Button)getView().findViewById(R.id.plan_bunk);
 
-           }
-       });
+    //   planBunk.setOnClickListener(new View.OnClickListener() {
+    //       @Override
+    //       public void onClick(View view) {
+
+   //        }
+   //    });
 
 
 

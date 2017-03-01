@@ -1,10 +1,14 @@
 package com.example.hp.bunkpoll.MongoDatabase;
 
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.Log;
 import com.example.hp.bunkpoll.LoginQuery;
+import com.example.hp.bunkpoll.MainActivity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,6 +35,8 @@ public static final String LOG_TAG=GetInfoAsyncTask.class.getSimpleName();
     static String server_output = null;
     static String temp_output = null;
 
+
+
     public URL createUrl(){
         URL url=null;
 
@@ -43,7 +49,7 @@ public static final String LOG_TAG=GetInfoAsyncTask.class.getSimpleName();
         return url;
     }
 
-    public String makkeHttpRequest(URL url) throws IOException
+    public String makeHttpRequest(URL url) throws IOException
     {
         String jsonResponse="";
                 if(url==null)
@@ -123,14 +129,13 @@ public String readFromStream(InputStream inputStream)throws IOException
 
 }
 
-
     @Override
     protected Boolean doInBackground(String... arg) {
 
         URL url =createUrl();
         String jsonResponse=null;
         try {
-            jsonResponse = makkeHttpRequest(url);
+            jsonResponse = makeHttpRequest(url);
         }catch(IOException e)
         {
             e.printStackTrace();

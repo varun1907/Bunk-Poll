@@ -13,9 +13,9 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:paddingLeft="50dp"
-        android:paddingTop="23dp"
+        android:paddingTop="5dp"
         android:text="@string/main_page_header"
         android:textColor="#FFFFFF"
         android:textSize="45sp" />
@@ -63,6 +63,15 @@
         android:paddingLeft="15dp"
         android:textColorHint="#FFFFFF" />
 
+
+    <CheckBox
+        android:id="@+id/remember_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"/>
+
     <Button
         android:id="@+id/button_login"
         android:layout_width="match_parent"
@@ -70,7 +79,8 @@
         android:layout_marginTop="23dp"
         android:background="#263238"
         android:text="@string/main_btn_login"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:onClick="login"/>
 
     <TextView
         android:id="@+id/register_text_view"
