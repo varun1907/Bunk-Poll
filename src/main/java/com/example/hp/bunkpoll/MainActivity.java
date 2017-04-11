@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox remember;
     Button loginButton;
     TextView registerTextView;
-    ProgressDialog pd;
+  //  ProgressDialog progressDialog;
 
     public static String PREFS_NAME = "mypre";
     public static String PREF_EMAIL = "email";
@@ -76,11 +77,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View view) {
 
-       pd = new ProgressDialog(MainActivity.this);
-        pd.setMessage("Loading....");
-        pd.setTitle("Authenticating");
-        pd.setIndeterminate(true);
-        pd.show();
+     //  pd = new ProgressDialog(MainActivity.this);
+     //   pd.setMessage("Loading....");
+     // pd.setTitle("Authenticating");
+     //  pd.setIndeterminate(true);
+     //   pd.show();
 
 
         loginEmail = (EditText) findViewById(R.id.main_text_email);
@@ -93,11 +94,11 @@ public class MainActivity extends AppCompatActivity {
         }
         loginButton.setEnabled(true);
 
-        //      final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this,
-        //               R.style.AppTheme);
-        //       progressDialog.setIndeterminate(true);
-        //       progressDialog.setMessage("Authenticating...");
-        //       progressDialog.show();
+    //          final  ProgressDialog progressDialog = new ProgressDialog(MainActivity.this,
+    //                   R.style.AppTheme);
+   //            progressDialog.setIndeterminate(true);
+   //            progressDialog.setMessage("Authenticating...");
+   //            progressDialog.show();
 
 
 
@@ -132,7 +133,8 @@ public class MainActivity extends AppCompatActivity {
                         // On complete call either onLoginSuccess or onLoginFailed
                         onLoginSuccess();
                         // onLoginFailed();
-                        pd.dismiss();
+                      //  pd.dismiss();
+     //                   progressDialog.dismiss();
                     }
                 }, 3000);
 
@@ -196,9 +198,15 @@ public class MainActivity extends AppCompatActivity {
     public void onLoginFailed() {
         Toast.makeText(getApplicationContext(), "Login failed Try again", Toast.LENGTH_LONG).show();
         loginButton.setEnabled(true);
+    //    pd.dismiss();
+
     }
 
-
+  //  @Override
+ //   protected void onStop() {
+ //       super.onStop();
+ //           progressDialog.dismiss();
+ //   }
     // method to check validation of email and password fields
 
     public boolean validate() {

@@ -49,18 +49,21 @@ public class IntermediateActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_logout) {
+        switch(id)
+        {
+            case R.id.action_logout :
+
             SharedPreferences sharedPrefs = getSharedPreferences(MainActivity.PREFS_NAME, MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPrefs.edit();
             editor.clear();
             editor.apply();
-            //  user="";
-            //show login form
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            break;
+            case R.id.action_aboutus :
+                Intent aboutUsIntent = new Intent(this,AboutUsActivity.class);
+                startActivity(aboutUsIntent);
         }
-
 
         return super.onOptionsItemSelected(item);
     }

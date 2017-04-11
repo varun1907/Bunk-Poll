@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
     android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#607D8B"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:paddingBottom="76dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hp.bunkpoll.RegisterActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="5dp"
-        android:paddingLeft="39dp"
+        android:gravity="center_horizontal"
         android:paddingTop="25dp"
         android:text="@string/register_page_header"
         android:textAppearance="?actionBarPopupTheme"
@@ -97,9 +105,9 @@
 
     <Button
         android:id="@+id/proceed"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginLeft="100dp"
+
         android:layout_marginTop="15dp"
         android:background="#263238"
         android:onClick="saveInfo"
@@ -109,3 +117,4 @@
 
 
 </LinearLayout>
+</ScrollView>

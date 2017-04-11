@@ -84,8 +84,7 @@ public class ProceedActivity extends AppCompatActivity {
         registerInfo.name = getIntent().getExtras().getString("regis_name");
         registerInfo.email = getIntent().getExtras().getString("regis_email");
         registerInfo.pass = getIntent().getExtras().getString("regis_pass");
-
-
+        
         registerInfo.college = registrationCollege.getText().toString();
         registerInfo.branch = registrationBranch.getText().toString();
         registerInfo.sem = registrationSem.getText().toString();

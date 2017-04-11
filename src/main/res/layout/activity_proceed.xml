@@ -145,6 +145,7 @@
             android:background="#263238"
             android:onClick="saveInfo"
             android:paddingBottom="7dp"
+            android:gravity="center_horizontal"
             android:text="@string/proceed_btn_register"
             android:textColor="@color/textColor"
             android:layout_marginTop="25dp"/>

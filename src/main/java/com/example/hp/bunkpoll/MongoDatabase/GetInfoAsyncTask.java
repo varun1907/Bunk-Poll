@@ -1,14 +1,11 @@
 package com.example.hp.bunkpoll.MongoDatabase;
 
 
-import android.app.ProgressDialog;
-import android.content.Context;
+
 import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.Log;
 import com.example.hp.bunkpoll.LoginQuery;
-import com.example.hp.bunkpoll.MainActivity;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -104,13 +101,15 @@ public String readFromStream(InputStream inputStream)throws IOException
 
     public ArrayList<LoginQuery> extractFeatureFromJson(String jsonQueryResponse)
     {
+
         if(TextUtils.isEmpty(jsonQueryResponse))
         {
                 return null;
         }
+        ArrayList<LoginQuery> lq = new ArrayList<LoginQuery>();
         try {
             JSONArray baseJsonResponse = new JSONArray(jsonQueryResponse);
-            ArrayList<LoginQuery> lq = new ArrayList<LoginQuery>();
+
 
             for (int i = 0; i < baseJsonResponse.length(); i++) {
                 JSONObject obj = baseJsonResponse.getJSONObject(i);
@@ -119,13 +118,12 @@ public String readFromStream(InputStream inputStream)throws IOException
                 lq.add(new LoginQuery(email, pass));
 
             }
-            return lq;
         }
          catch (JSONException e) {
-            Log.e(LOG_TAG, "Problem parsing the earthquake JSON results", e);
+            Log.e(LOG_TAG, "Problem parsing the  JSON results", e);
         }
-        return null;
 
+        return lq;
 
 }
 
@@ -142,11 +140,13 @@ public String readFromStream(InputStream inputStream)throws IOException
         }
 
         ArrayList<LoginQuery> lq=extractFeatureFromJson(jsonResponse);
-        for(int i=0;i<lq.size();i++) {
+        int size=lq.size();
+        for(int i=0;i<size;i++) {
             if (arg[0].matches( lq.get(i).queryEmail) && arg[1].matches(lq.get(i).queryPass)) {
                 return true;
             }
         }
+
         return false;
     }
 

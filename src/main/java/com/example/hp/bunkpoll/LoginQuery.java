@@ -5,17 +5,15 @@ package com.example.hp.bunkpoll;
  */
 public class LoginQuery {
 
+
+    public  String  queryEmail;
+    public  String queryPass;
+
     public LoginQuery(String email, String pass) {
 
         queryEmail=email;
         queryPass=pass;
     }
-
-
-
-    public  String  queryEmail;
-  public  String queryPass;
-
 
 
     public  String getQueryEmail() {

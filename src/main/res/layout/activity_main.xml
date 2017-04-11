@@ -1,95 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#607D8B"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:paddingLeft="50dp"
-        android:paddingTop="5dp"
-        android:text="@string/main_page_header"
-        android:textColor="#FFFFFF"
-        android:textSize="45sp" />
-
-    <TextView
-        android:id="@+id/main_email"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="30dp"
-        android:paddingLeft="15dp"
-        android:text="@string/main_email"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp" />
-
-    <EditText
-        android:id="@+id/main_text_email"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:backgroundTint="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/main_email_text"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:textColorHint="#FFFFFF" />
+        android:layout_height="match_parent"
+        android:background="#607D8B"
+        android:orientation="vertical"
+        android:paddingBottom="76dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
 
 
-    <TextView
-        android:id="@+id/main_pass"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="30dp"
-        android:paddingLeft="15dp"
-        android:text="@string/main_pass"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+           android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/main_page_header"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp" />
 
-    <EditText
-        android:id="@+id/main_text_pass"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:backgroundTint="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/main_pass_text"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:textColorHint="#FFFFFF" />
+        <TextView
+            android:id="@+id/main_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:text="@string/main_email"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/main_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/main_email_text"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/main_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:text="@string/main_pass"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/main_text_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/main_pass_text"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFFFF" />
 
 
-    <CheckBox
-        android:id="@+id/remember_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remember"
-        android:layout_marginLeft="10dp"
-        android:textColor="#FFFFFF"/>
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:background="#263238"
-        android:text="@string/main_btn_login"
-        android:textColor="#FFFFFF"
-        android:onClick="login"/>
-
-    <TextView
-        android:id="@+id/register_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="25dp"
-        android:paddingLeft="90dp"
-        android:text="@string/main_regis_link"
-        android:textColor="#FFFFFF" />
+        <CheckBox
+            android:id="@+id/remember_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Remember"
+            android:textColor="#FFFFFF" />
 
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:background="#263238"
+            android:onClick="login"
+            android:text="@string/main_btn_login"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/register_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="@string/main_regis_link"
+            android:textColor="#FFFFFF" />
+
+
+
+    </LinearLayout>
+</ScrollView>
