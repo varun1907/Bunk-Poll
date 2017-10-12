@@ -1,3 +1,3 @@
 # Bunk-Poll
 
-Practice Project
+Practice Android Project
